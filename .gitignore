@@ -1,19 +1,35 @@
-# Local
 .DS_Store
-*.local
 *.log*
+*.cpuprofile
+node_modules/
 
-# Dist
-node_modules
 dist/
-
-# Profile
+dist-*
+compiled/
+!website/**/dist-path.mdx
+coverage/
+doc_build/
+playwright-report/
+tsconfig.tsbuildinfo
+.swc
 .rspack-profile-*/
 
-# IDE
-.vscode/*
-!.vscode/extensions.json
-.idea
+# CSS Modules dist files
+*.css.d.ts
+*.less.d.ts
+*.scss.d.ts
 
-*storybook.log
-storybook-static
+# Test temp files
+test-temp-*
+
+.vscode/**/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+.nx/
+.history/
+.env.local
+.env.*.local
+
+# ignore directory for artifacts produced by tests
+test-results/
