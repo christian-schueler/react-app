@@ -3,6 +3,8 @@ import Profile from './Profile';
 import UnorderedList from './UnorderedList';
 
 const App = ({ title, description }: { title: string; description: string }) => {
+
+  // data for the component Profile
   const profiles: Array<{
     id: number;
     name: string;
@@ -25,6 +27,7 @@ const App = ({ title, description }: { title: string; description: string }) => 
       discoveries: ['a method for measuring carbon dioxide in seawater'] },
   ];
 
+  // data for the component UnorderedList
   const packageList: Array<{isPacked: boolean, name: string}> = [
     { isPacked: true, name: 'Laptop' },
     { isPacked: false, name: 'Headphones' },
