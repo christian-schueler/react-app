@@ -7,7 +7,7 @@ if (rootEl) {
   const root = ReactDOM.createRoot(rootEl);
   root.render(
     <React.StrictMode>
-      <App />
+      <App title="Hallo Welt" description="Hier werden verschiedene React Komponenten ausprobiert" />
     </React.StrictMode>,
   );
 }
